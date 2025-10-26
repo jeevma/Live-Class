@@ -1,7 +1,7 @@
 import os
 
 # Set your API key (replace YOUR_API_KEY with your actual key)
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDCvQ9ids0bgEq1eZK2l3aD9G-me9RXTK8"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyBQ_pZ37jQiQG1tFGiyfViNrWXOZXjew5U"
 
 # Verify it’s set
 print("GOOGLE_API_KEY set successfully!")
@@ -19,10 +19,10 @@ agent = Agent(
     markdown=True,
 )
 
-# agent.print_response(input="Trending startups and product and Stories from hackernews")
+agent.print_response(input="Trending startups and product and Stories from hackernews")
 
 
 # Run agent with input="Trending startups and products."
-response: RunOutput = agent.run(input="Trending startups and products and Stories from Hackernews.")
+# response: RunOutput = agent.run(input="Trending startups and products and Stories from Hackernews.")
 # Print the response in markdown format
-print(response)
+# print(response)
